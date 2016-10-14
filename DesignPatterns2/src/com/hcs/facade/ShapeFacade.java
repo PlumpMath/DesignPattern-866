@@ -2,9 +2,9 @@ package com.hcs.facade;
 
 public class ShapeFacade {
 
-    private Circle circle;
-    private Rectangle rectangle;
-    private Triangle triangle;
+    private Shape circle;
+    private Shape rectangle;
+    private Shape triangle;
 
     public ShapeFacade() {
         this.circle = new Circle();
@@ -22,6 +22,13 @@ public class ShapeFacade {
 
     public void drawTriangle() {
         this.triangle.draw();
+    }
+    
+    public void drawAllShape(){
+    	System.out.println("draw all shape");
+    	this.circle.draw();
+    	this.rectangle.draw();
+    	this.triangle.draw();
     }
 
 }

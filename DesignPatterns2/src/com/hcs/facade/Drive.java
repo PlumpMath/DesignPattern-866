@@ -9,6 +9,8 @@ public class Drive {
         facade.drawCircle();
         facade.drawRectangle();
         facade.drawTriangle();
+        
+        facade.drawAllShape();
 
     }
 
