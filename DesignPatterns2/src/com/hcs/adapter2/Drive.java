@@ -3,15 +3,21 @@ package com.hcs.adapter2;
 public class Drive {
 
 	public static void main(String[] args) {
-		ShapeDrawer shapeDrawer = new ShapeDrawer(new Rectangle());
-		shapeDrawer.drawArea();
-		shapeDrawer.drawPerimeter();
+		Attacker tank = new Tank();
+		tank.driveForward();
+		tank.fire();
+		tank.driveBackward();
 		
-		shapeDrawer = new ShapeDrawer(new Circle());
-		shapeDrawer.drawArea();
-		shapeDrawer.drawPerimeter();
+		Attacker robot = new RobotAdapter(new Robot());
+		robot.driveForward();
+		robot.fire();
+		robot.driveBackward();
 		
 		
+		
+		
+		
+
 	}
 
 }
